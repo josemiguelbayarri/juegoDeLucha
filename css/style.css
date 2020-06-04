@@ -110,6 +110,24 @@
     border: 2px solid black;
 } */
 
+#bt2{
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    width: 8em;
+    border-radius: 7em 4em 6em 5em;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: klnifed;
+    background: linear-gradient(to bottom right, red, #0a5b3a);
+    color: blanchedalmond;
+}
+
+#bt2:hover{
+    cursor: pointer;
+}
+
 
 
 /* TERCERA PANTALLA */
@@ -123,10 +141,42 @@
 
 /* CUARTA PANTALLA */
 #pantalla4{
-    background-color: green;
+    background: linear-gradient(to bottom, #3c0936, #17011d);
     height: 100vh;
 }
 
+.titulo4{
+    text-align: center;
+    font-size: 5em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: .5em 0 .5em 0;
+    font-family: klnifed;
+    background: -webkit-linear-gradient(left top,);
+    background: linear-gradient(to bottom right, red, #0a5b3a);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+
+#pantalla4 .seleccionar{
+    width: 100%;
+}
+
+#pantalla4 .escenario{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.escenario .luchadores_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.escenario .luchadores_right{
+    display: flex;
+    flex-direction: column;
+}
 
 /* QUINTA PANTALLA */
 #pantalla5{

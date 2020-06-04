@@ -23,44 +23,58 @@
             <h1 class="titulo2">player1</h1>
             <h2 class="subtitulo2">Elige a tres personajes</h2>
             <div class="luchadores">
-                <div class="luchador"><img src="img/jago.png" alt="" id="1" onclick="juego.escoge1(this.id)"><p>JAGO</p></div>
-                <div class="luchador"><img src="img/black.png" alt="" id="2" onclick="juego.escoge1(this.id)"><p>BLACK <br> ORCHID</p></div>
-                <div class="luchador"><img src="img/cinder.png" alt="" id="3" onclick="juego.escoge1(this.id)"><p>CINDER</p></div>
-                <div class="luchador"><img src="img/spinal.png" alt="" id="4" onclick="juego.escoge1(this.id)"><p>SPINAL</p></div>
-                <div class="luchador"><img src="img/fulgore.png" alt="" id="5" onclick="juego.escoge1(this.id)"><p>FULGOR</p></div>
-                <div class="luchador"><img src="img/sabre.png" alt="" id="6" onclick="juego.escoge1(this.id)"><p>WULF</p></div>
-                <div class="luchador"><img src="img/riptor.png" alt="" id="7" onclick="juego.escoge1(this.id)"><p>RIPTOR</p></div>
-                <div class="luchador"><img src="img/glacius.png" alt="" id="8" onclick="juego.escoge1(this.id)"><p>GLACIUS</p></div>
-                <div class="luchador"><img src="img/combo.png" alt="" id="9" onclick="juego.escoge1(this.id)"><p>COMBO</p></div>
+                <div class="luchador"><img src="img/jago.png" alt="" id="1" onclick="partida.escoge(this.id)"><p>JAGO</p></div>
+                <div class="luchador"><img src="img/black.png" alt="" id="2" onclick="partida.escoge(this.id)"><p>BLACK <br> ORCHID</p></div>
+                <div class="luchador"><img src="img/cinder.png" alt="" id="3" onclick="partida.escoge(this.id)"><p>CINDER</p></div>
+                <div class="luchador"><img src="img/spinal.png" alt="" id="4" onclick="partida.escoge(this.id)"><p>SPINAL</p></div>
+                <div class="luchador"><img src="img/fulgore.png" alt="" id="5" onclick="partida.escoge(this.id)"><p>FULGOR</p></div>
+                <div class="luchador"><img src="img/sabre.png" alt="" id="6" onclick="partida.escoge(this.id)"><p>WULF</p></div>
+                <div class="luchador"><img src="img/riptor.png" alt="" id="7" onclick="partida.escoge(this.id)"><p>RIPTOR</p></div>
+                <div class="luchador"><img src="img/glacius.png" alt="" id="8" onclick="partida.escoge(this.id)"><p>GLACIUS</p></div>
+                <div class="luchador"><img src="img/combo.png" alt="" id="9" onclick="partida.escoge(this.id)"><p>COMBO</p></div>
             </div>
-            <button  onclick="organizer(3)">pulsame</button>
-            
+            <button id="bt2" onclick="organizer(3)">next stage</button>
         </div>
     </section>
 
     <!-- TERCERA PANTALLA -->
-    <section id="pantalla3" style="display: none;" onclick="organizer(4)">
+    <section id="pantalla3" style="display: none;">
         <div class="seleccionar">
             <h1 class="titulo2">player2</h1>
             <h2 class="subtitulo2">Elige a tres personajes</h2>
             <div class="luchadores">
-                <div class="luchador"><img src="img/jago.png" alt="" id="1" onclick="juego.escoge1(this.id)"><p>JAGO</p></div>
-                <div class="luchador"><img src="img/black.png" alt="" id="2" onclick="juego.escoge1(this.id)"><p>BLACK <br> ORCHID</p></div>
-                <div class="luchador"><img src="img/cinder.png" alt="" id="3" onclick="juego.escoge1(this.id)"><p>CINDER</p></div>
-                <div class="luchador"><img src="img/spinal.png" alt="" id="4" onclick="juego.escoge1(this.id)"><p>SPINAL</p></div>
-                <div class="luchador"><img src="img/fulgore.png" alt="" id="5" onclick="juego.escoge1(this.id)"><p>FULGOR</p></div>
-                <div class="luchador"><img src="img/sabre.png" alt="" id="6" onclick="juego.escoge1(this.id)"><p>WULF</p></div>
-                <div class="luchador"><img src="img/riptor.png" alt="" id="7" onclick="juego.escoge1(this.id)"><p>RIPTOR</p></div>
-                <div class="luchador"><img src="img/glacius.png" alt="" id="8" onclick="juego.escoge1(this.id)"><p>GLACIUS</p></div>
-                <div class="luchador"><img src="img/combo.png" alt="" id="9" onclick="juego.escoge1(this.id)"><p>COMBO</p></div>
+                <div class="luchador"><img src="img/jago.png" alt="" id="1" onclick="partida.escoge(this.id)"><p>JAGO</p></div>
+                <div class="luchador"><img src="img/black.png" alt="" id="2" onclick="partida.escoge(this.id)"><p>BLACK <br> ORCHID</p></div>
+                <div class="luchador"><img src="img/cinder.png" alt="" id="3" onclick="partida.escoge(this.id)"><p>CINDER</p></div>
+                <div class="luchador"><img src="img/spinal.png" alt="" id="4" onclick="partida.escoge(this.id)"><p>SPINAL</p></div>
+                <div class="luchador"><img src="img/fulgore.png" alt="" id="5" onclick="partida.escoge(this.id)"><p>FULGOR</p></div>
+                <div class="luchador"><img src="img/sabre.png" alt="" id="6" onclick="partida.escoge(this.id)"><p>WULF</p></div>
+                <div class="luchador"><img src="img/riptor.png" alt="" id="7" onclick="partida.escoge(this.id)"><p>RIPTOR</p></div>
+                <div class="luchador"><img src="img/glacius.png" alt="" id="8" onclick="partida.escoge(this.id)"><p>GLACIUS</p></div>
+                <div class="luchador"><img src="img/combo.png" alt="" id="9" onclick="partida.escoge(this.id)"><p>COMBO</p></div>
             </div>
+            <button id="bt2" onclick="organizer(4)">next stage</button>
         </div>
-        
-        
     </section>
 
     <!-- CUARTA PANTALLA -->
-    <section id="pantalla4" style="display: none;" onclick="organizer(5)"></section>
+    <section id="pantalla4" style="display: none;" onclick="organizer(5)">
+        <div class="seleccionar">
+            <h1 class="titulo4">fight</h1>
+            <div class="escenario">
+                <div class="luchadores_left">
+                    <img src="img/black.png" alt="">
+                    <img src="img/black.png" alt="">
+                    <img src="img/black.png" alt="">
+                </div>
+                <div class="luchadores_right">
+                    <img src="img/black.png" alt="">
+                    <img src="img/black.png" alt="">
+                    <img src="img/black.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- QUINTA PANTALLA -->
