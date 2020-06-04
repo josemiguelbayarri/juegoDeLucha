@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ENLACE A LA FUENTE DE KILLER INSTINCT -->
+    <link rel="stylesheet" href="css/fuentes.css">
+    <!-- ENLACE A LA HOJA DE ESTILOS CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- PRIMERA PANTALLA -->
+    <section id="pantalla1" class="centro"  onclick="organizer(2)">
+        <div class="titulo"><h1>Killer Instinct</h1></div>
+        <div class="imagen_titulo"><img src="img/logo.png" alt=""></div>
+        <div class="subtitulo"><p>Insert Coin</p></div>
+    </section>
+
+    <!-- SEGUNDA PANTALLA -->
+    <section id="pantalla2" style="display: none;" onclick="organizer(3)">
+        <div class="seleccionar">
+            <h1 class="titulo2">player1</h1>
+            <h2 class="subtitulo2">Elige a tres personajes</h2>
+            <div class="luchadores">
+                <div class="luchador"><img src="img/jago.png" alt="" id="1" onclick="juego.escoge1(this.id)"><p>JAGO</p></div>
+                <div class="luchador"><img src="img/black.png" alt="" id="2" onclick="juego.escoge1(this.id)"><p>BLACK <br> ORCHID</p></div>
+                <div class="luchador"><img src="img/cinder.png" alt="" id="3" onclick="juego.escoge1(this.id)"><p>CINDER</p></div>
+                <div class="luchador"><img src="img/spinal.png" alt="" id="4" onclick="juego.escoge1(this.id)"><p>SPINAL</p></div>
+                <div class="luchador"><img src="img/fulgore.png" alt="" id="5" onclick="juego.escoge1(this.id)"><p>FULGOR</p></div>
+                <div class="luchador"><img src="img/sabre.png" alt="" id="6" onclick="juego.escoge1(this.id)"><p>WULF</p></div>
+                <div class="luchador"><img src="img/riptor.png" alt="" id="7" onclick="juego.escoge1(this.id)"><p>RIPTOR</p></div>
+                <div class="luchador"><img src="img/glacius.png" alt="" id="8" onclick="juego.escoge1(this.id)"><p>GLACIUS</p></div>
+                <div class="luchador"><img src="img/combo.png" alt="" id="9" onclick="juego.escoge1(this.id)"><p>COMBO</p></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- TERCERA PANTALLA -->
+    <section id="pantalla3" style="display: none;" onclick="organizer(4)"></section>
+
+    <!-- CUARTA PANTALLA -->
+    <section id="pantalla4" style="display: none;" onclick="organizer(5)"></section>
+
+
+    <!-- QUINTA PANTALLA -->
+    <section id="pantalla5" style="display: none;" onclick="organizer(1)"></section>
+
+
+    <!-- ENLACES A LOS ARCHIVOS JAVASCRIPT -->
+    <script src="js/utiles.js"></script>
+    <script src="js/fighters.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

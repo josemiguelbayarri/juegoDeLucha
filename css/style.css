@@ -1,0 +1,128 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* PRIMERA PANTALLA */
+.titulo h1{
+    font-family: klnifed;
+    font-size: 10em;
+    background: -webkit-linear-gradient(left top,);
+    background: linear-gradient(to bottom right, red, #0a5b3a);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+
+.centro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #3c0936, #17011d);
+    height: 100vh;
+}
+
+.imagen_titulo{
+    margin: 3em 0 3em 0;
+    
+}
+
+.imagen_titulo img{
+    height: 15em;
+    width: 15em;
+}
+
+
+.subtitulo{
+    font-family: klnifed;
+    font-size: 5em;
+}
+
+
+
+/* SEGUNDA PANTALLA */
+#pantalla2{
+    background: linear-gradient(to bottom, #3c0936, #17011d);
+    height: 100vh;
+    justify-content: center;
+}
+
+.seleccionar .titulo2{
+    text-align: center;
+    font-size: 5em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: .5em 0 0 0;
+    font-family: klnifed;
+    background: -webkit-linear-gradient(left top,);
+    background: linear-gradient(to bottom right, red, #0a5b3a);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+
+.seleccionar .subtitulo2{
+    text-align: center;
+    margin: 1em 0;
+    text-transform: uppercase;
+    font-family: klnifed;
+    background: -webkit-linear-gradient(left top,);
+    background: linear-gradient(to bottom right, red, #0a5b3a);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+
+.luchadores{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.luchador{
+    border: 2px solid transparent;
+    margin: 0 .4em;
+}
+
+.luchador p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: klnifed;
+    background: -webkit-linear-gradient(left top,);
+    background: linear-gradient(to bottom right, red, #0a5b3a);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+.seleccionar img{
+    width: 8em;
+    height: 10em;
+}
+
+.luchador:hover{
+    border: 2px solid black;
+}
+
+
+
+/* TERCERA PANTALLA */
+#pantalla3{
+    background-color: blue;
+    height: 100vh;
+}
+
+
+
+/* CUARTA PANTALLA */
+#pantalla4{
+    background-color: green;
+    height: 100vh;
+}
+
+
+/* QUINTA PANTALLA */
+#pantalla5{
+    background-color: green;
+    height: 100vh;
+}
