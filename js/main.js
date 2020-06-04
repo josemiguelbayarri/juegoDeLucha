@@ -5,14 +5,15 @@ let juego = {
     equipo2: [],
 
 
+
     //metodos
 
     escoge1(idLuchador){
         //aqui programaremos la funcionalidad para escoger los personajes del primer equipo
         console.log("LA ID DEL LUCHADOR ESCOGIDO ES:", idLuchador);
-        let elegir = organizer();
-        if(this.equipo1.lenght < 3){
-            elegir = false;
+        /* let elegir = organizer(); */
+        if(this.equipo1.lenght >= 3){
+            this.elegir = false;
         }
 
        this.equipo1.push(allplayers[idLuchador]);
