@@ -13,7 +13,7 @@ function initSound(path){
 }
  */
 function Play() {
-    console.log("hemos entrado");
+    /* console.log("hemos entrado"); */
     sound.play();
     
 }

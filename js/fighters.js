@@ -100,17 +100,17 @@ let game = {
                         this.p2.Vida = 0;
                     }
 
-                    let lbact = document.getElementById("..");//REVISARRRRRRRRRRRRR EN EL INDEXXXXXXXX
+                    let lbact = document.getElementById("glad2v");
                     lbact.innerHTML = `Player 2 life : ${this.p2.Vida}`;
                 }
             }
         }else{
             //gana el player2
-            document.getElementById("..").onclick = "";//REVISARRRRRRRRRRRRR EN EL INDEXXXXXXXX
+            document.getElementById("fist").onclick = "";
             this.winner = `${this.p2.Name} WINS... ${this.p1.Name} IS KO`;
 
 
-            let koknow2 = document.getElementById("..");//REVISARRRRRRRRRRRRR EN EL INDEXXXXXXXX
+            let koknow2 = document.getElementById("anuncioko");
             koknow2.innerHTML = `${this.p2.Name} WINS... ${this.p1.Name} IS KO`;
 
             partida.team2win++;
@@ -134,16 +134,16 @@ let game = {
                     if(this.p1.Vida < 0){
                         this.p1.Vida = 0;
                     }
-                    let lbact = document.getElementById("..");//REVISARRRRRRRRRRRRR EN EL INDEXXXXXXXX
+                    let lbact = document.getElementById("glad1v");
                     lbact.innerHTML = `PLAYER 1 LIFE : ${this.p1.Vida}`;
                 }
             }
         }else{
             //gana el player1
             this.winner = `${this.p1.Name} GANA ${this.p2.Name} KO`;
-            document.getElementById("..").onclick = "";//REVISARRRRRRRRRRRRR EN EL INDEXXXXXXXX
+            document.getElementById("fist").onclick = "";
 
-            let koknow = document.getElementById("..");//REVISARRRRRRRRRRRRR EN EL INDEXXXXXXXX
+            let koknow = document.getElementById("anuncioko");
 
             koknow.innerHTML = `${this.p1.Name} WINS.. ${this.p2.Name} IS KO`;
 
