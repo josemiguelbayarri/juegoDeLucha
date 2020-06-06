@@ -1,14 +1,23 @@
-const organizer = (arg_0) => {
-    let fasewant = "pantalla" + arg_0;
+//objeto útil de funciones ...
+const func = {
 
-    let arrFases = ["pantalla1", "pantalla2", "pantalla3", "pantalla4", "pantalla5"];
-
-    arrFases = arrFases.filter(val => !fasewant.includes(val));
-
-    document.getElementById(fasewant).style.display = "flex";
-
-    for (let _f of arrFases){
-        document.getElementById(_f).style.display = "none";
+    minMax: (n, min, max) => {
+        //limite del minimo y el maximo
+        return Math.max(Math.min(n, max), min);
+    },
+    random(min, max){
+        //creacion de numero aleatoria
+        return Math.floor(Math.random() * (max - min) + min);
     }
-
 }
+
+function log (arg){
+    //console log..
+    console.log(arg);
+}
+
+
+//funcion de delay...
+
+const resolveIn = delay =>
+new Promise(res => setTimeout(() => res(delay), delay));
