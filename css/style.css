@@ -89,7 +89,7 @@
     margin: 0 .4em;
 }
 
-.luchador p{
+.luchador .nom{
     text-align: center;
     font-size: 2em;
     font-weight: bold;
@@ -191,10 +191,21 @@
 
 /* QUINTA PANTALLA */
 #pantalla5{
-    background-color: green;
+    background: linear-gradient(to bottom, #3c0936, #17011d);
     height: 100vh;
 }
 
+.bodyfight{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.bloca, .blocb{
+    text-align: center;
+    color: white;
+    padding: 2em;
+}
 
 
 

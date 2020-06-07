@@ -32,11 +32,11 @@ class Fighter{
 
 //instanciamos a los luchadores
 let f1 = new Fighter("Jago", '1', 20, 40, 70, 30, 90);
-let f2 = new Fighter("Black Orchid", '2', 40, 30, 75, 35, 80);
+let f2 = new Fighter("Orchid", '2', 40, 30, 75, 35, 80);
 let f3 = new Fighter("Cinder", '3', 10, 60, 50, 85, 70);
 let f4 = new Fighter("Spinal", '4', 80, 50, 10, 0, 59);
 let f5 = new Fighter("Fulgore", '5', 90, 40, 25, 15, 69);
-let f6 = new Fighter("Sabrewulf", '6', 25, 70, 40, 95, 95);
+let f6 = new Fighter("Wulf", '6', 25, 70, 40, 95, 95);
 let f7 = new Fighter("Riptor", '7', 10, 100, 80, 35, 100);
 let f8 = new Fighter("Glacius", '8', 70, 70, 70, 75, 70);
 let f9 = new Fighter("Combo", '9', 90, 90, 50, 2, 88);

@@ -95,47 +95,42 @@ let partida = {
         this.team2posibles = this.team2posibles.filter(val => !this.team1.includes(val));
 
         let plena_r2 = document.getElementById("pantalla3");
-        plena_r2.innerHTML = `<div class="centrar">
-            <div class="rooscont">
-                <div class="faces">
-                    <div class="facesup">
-
-                    </div>
-                    <div class="facesin">
-                        <div class="cara"></div>
-                        <div class="cara"><img src="img/${this.team2posibles[0].Nombre}.png" alt="" id="11" onclick="partida.choose2(0,11)">
-                            <p>${this.team2posibles[0].Nombre}</p>
+        plena_r2.innerHTML = `<div class="seleccionar">
+            <h1 class="titulo2">player2</h1>
+            <h2 class="subtitulo2">Elige a tres personajes</h2>
+            <div class="luchadores">
+                
+                    
+                    
+                        
+                        <div class="luchador"><img src="img/${this.team2posibles[0].Nombre}.png" alt="" id="11" onclick="partida.choose2(0,11)">
+                            <p class="nom">${this.team2posibles[0].Nombre}</p>
                         </div>
-                        <div class="cara"><img src="img/${this.team2posibles[1].Nombre}.png" alt="" id="12" onclick="partida.choose2(1,12)">
-                            <div class="nom">${this.team2posibles[1].Nombre}</div>
+                        <div class="luchador"><img src="img/${this.team2posibles[1].Nombre}.png" alt="" id="12" onclick="partida.choose2(1,12)">
+                            <p class="nom">${this.team2posibles[1].Nombre}</p>
                         </div>
-                        <div class="cara"><img src="img/${this.team2posibles[2].Nombre}.png" alt="" id="13" onclick="partida.choose2(2,13)">
-                            <div class="nom">${this.team2posibles[2].Nombre}</div>
+                        <div class="luchador"><img src="img/${this.team2posibles[2].Nombre}.png" alt="" id="13" onclick="partida.choose2(2,13)">
+                            <p class="nom">${this.team2posibles[2].Nombre}</p>
                         </div>
-                        <div class="cara"><img src="img/${this.team2posibles[3].Nombre}.png" alt="" id="14" onclick="partida.choose2(3,14)">
-                            <div class="nom">${this.team2posibles[3].Nombre}</div>
+                        <div class="luchador"><img src="img/${this.team2posibles[3].Nombre}.png" alt="" id="14" onclick="partida.choose2(3,14)">
+                            <p class="nom">${this.team2posibles[3].Nombre}</p>
                         </div>
-                        <div class="cara"><img src="img/${this.team2posibles[4].Nombre}.png" alt="" id="15" onclick="partida.choose2(4,15)">
-                            <div class="nom">${this.team2posibles[4].Nombre}</div>
+                        <div class="luchador"><img src="img/${this.team2posibles[4].Nombre}.png" alt="" id="15" onclick="partida.choose2(4,15)">
+                            <p class="nom">${this.team2posibles[4].Nombre}</p>
                         </div>
-                        <div class="cara"><img src="img/${this.team2posibles[5].Nombre}.png" alt="" id="16" onclick="partida.choose2(5,16)">
-                            <div class="nom">${this.team2posibles[5].Nombre}</div>
+                        <div class="luchador"><img src="img/${this.team2posibles[5].Nombre}.png" alt="" id="16" onclick="partida.choose2(5,16)">
+                            <p class="nom">${this.team2posibles[5].Nombre}</p>
                         </div>
                         
-                        <div class="cara"></div>
-                    </div>
-                </div>
-                <div class="p1message">PLAYER 2<br><br> - SELECT YOUR 3 FIGHTERS -</div>
-
-                <div class="fighterscont">
-                    <div class="fightlm"></div>
-                    <div id="p2t0" class="p1f"></div>
-                    <div id="p2t1" class="p1f"></div>
-                    <div id="p2t2" class="p1f"></div>
-                    <div class="fightrm"></div>
-                </div>
             </div>
-        </div>
+        
+            <div class="fighterscont">
+                <div class="fightlm"></div>
+                <div id="p2t0" class="p1f"></div>
+                <div id="p2t1" class="p1f"></div>
+                <div id="p2t2" class="p1f"></div>
+                <div class="fightrm"></div>
+            </div>
         </div>`;
     },
     init4() {
@@ -143,7 +138,7 @@ let partida = {
         this.organizer(4);
 
         let plena_pf = document.getElementById("pantalla4");
-        plena_pf.innerHTML = `<div class="centrar">
+        plena_pf.innerHTML = `<div class="seleccionar">
         <div class="prefightking">
             <div class="getready">
                 <div class="getready1"></div>
@@ -156,22 +151,22 @@ let partida = {
                     <div class="preroundt"></div>
                     
                     <div class="preround1">
-                    <img src="img/fi/${this.team1[0].Name}f.png" alt="">  VS
-                    <img src="img/fi/${this.team2[0].Name}f.png" alt="">
+                    <img src="img/${this.team1[0].Nombre}.png" alt="">  VS
+                    <img src="img/${this.team2[0].Nombre}.png" alt="">
                     </div>
                     
                     <div class="preroundt"></div>
                     
                     <div class="preround1">
-                    <img src="img/fi/${this.team1[1].Name}f.png" alt="">  VS
-                    <img src="img/fi/${this.team2[1].Name}f.png" alt="">
+                    <img src="img/${this.team1[1].Nombre}.png" alt="">  VS
+                    <img src="img/${this.team2[1].Nombre}.png" alt="">
                     </div>
                     
                     <div class="preroundt"></div>
                     
                     <div class="preround1">
-                    <img src="img/fi/${this.team1[2].Name}f.png" alt="">  VS
-                    <img src="img/fi/${this.team2[2].Name}f.png" alt="">
+                    <img src="img/${this.team1[2].Nombre}.png" alt="">  VS
+                    <img src="img/${this.team2[2].Nombre}.png" alt="">
                     </div>
                 
                 </div>
@@ -193,32 +188,33 @@ let partida = {
             arg2 = this.team2[this.cont_fight];
 
             let plena_pf3 = document.getElementById("pantalla5");
-            plena_pf3.innerHTML = `<div class="cabecera">
-        <div class="cab1"></div>
-        <div class="cab2">FIGHT ${this.cont_fight + 1}</div>
-        <div class="cab3"></div>
-    </div>
-    <div class="bodyfight">
-        <div class="bloca">
-            <div class="luch1name">${this.team1[this.cont_fight].Nombre}</div>
-            <div class="luch1sprite"><img src="img/${this.team1[this.cont_fight].Nombre}.png"></div>
-            <div id="glad1v" class="luch1life">PLAYER 1 LIFE : ${this.team1[this.cont_fight].Vida}</div>
+            plena_pf3.innerHTML = `<div class="seleccionar" style="width: 100%;">
+        
+            <h1 class="titulo2">FIGHT ${this.cont_fight + 1}</h1>
+            <div class="cab3"></div>
+        
+        <div class="bodyfight">
+            <div class="bloca">
+                <div class="luch1name">${this.team1[this.cont_fight].Nombre}</div>
+                <div class="luch1sprite"><img src="img/${this.team1[this.cont_fight].Nombre}.png"></div>
+                <div id="glad1v" class="luch1life">PLAYER 1 LIFE : ${this.team1[this.cont_fight].Vida}</div>
+            </div>
+            <div class="blocb">
+                <div class="luch2name">${this.team2[this.cont_fight].Nombre}</div>
+                <div class="luch2sprite"><img src="img/${this.team2[this.cont_fight].Nombre}.png"></div>
+                <div id="glad2v" class="luch2life">PLAYER 2 LIFE : ${this.team2[this.cont_fight].Vida}</div>
+            </div>
         </div>
-        <div class="blocb">
-            <div class="luch2name">${this.team2[this.cont_fight].Nombre}</div>
-            <div class="luch2sprite"><img src="img/${this.team2[this.cont_fight].Nombre}.png"></div>
-            <div id="glad2v" class="luch2life">PLAYER 2 LIFE : ${this.team2[this.cont_fight].Vida}</div>
+        <div class="announcement">
+            <div class="ann1"></div>
+            <div id ="anuncioko" class="ann2"></div>
+            <div class="ann3"></div>
         </div>
-    </div>
-    <div class="announcement">
-        <div class="ann1"></div>
-        <div id ="anuncioko" class="ann2"></div>
-        <div class="ann3"></div>
-    </div>
-    <div class="punch">
-        <div class="pun1"></div>
-        <div class="pun2"><img id="fist" class ="hitter" src="./img/punch.png" onclick="game.turnoFight(arg1,arg2)"></div>
-        <div class="pun3"></div>
+        <div class="punch">
+            <div class="pun1"></div>
+            <div class="pun2"><img id="fist" class ="hitter" src="img/punch.png" onclick="game.turnoFight(arg1,arg2)"></div>
+            <div class="pun3"></div>
+        </div>
     </div>`;
         } else {
 
@@ -246,16 +242,16 @@ let partida = {
             tw = this.team2;
         };
 
-        let plena_end = document.getElementById("fase6");
+        let plena_end = document.getElementById("pantalla6");
         plena_end.innerHTML = `<div class="centrar">
             <div class="winann">
                 <div class="winteam">TEAM ${pn}</div>
                 <div class="wininfo">
                     <div class="wpinfo">PLAYER ${pn} WON ${pnc} COMBATS OUT OF 3</div>
                     <div class="wrestinfo">
-                        <div class="carasganan"><img src="img/fi/${tw[0].Name}f.png" alt="">
-                        <img src="img/fi/${tw[1].Name}f.png" alt="">
-                        <img src="img/fi/${tw[2].Name}f.png" alt=""></div>
+                        <div class="carasganan"><img src="img/${tw[0].Nombre}.png" alt="">
+                        <img src="img/${tw[1].Nombre}.png" alt="">
+                        <img src="img/${tw[2].Nombre}.png" alt=""></div>
                         <div class="winlogo"><img src="./img/winner.png"></div>
                         <div class="textrest"><p class="totres" onclick="partida.init1()">CLICK HERE TO PLAY AGAIN</p></div>
                         <div class="espaciowin"></div>
