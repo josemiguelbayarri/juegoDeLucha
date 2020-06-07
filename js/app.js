@@ -1,6 +1,6 @@
 let _x;
 let _c;
-let _r2;
+
 
 
 let partida = {
@@ -18,25 +18,26 @@ let partida = {
     arg2: "",
 
     choose1(idfighter){
-
+        console.log(idfighter);
         this.team1.push(allplayers[idfighter]);
 
         if(this.team1.lenght < 4){
             document.getElementById(idfighter).className = "carasel";
             document.getElementById(idfighter).onclick = "";
+            console.log("estoy aqui");
 
         }
 
         for(let _x = 0; _x < this.team1.length; _x++){
             this.fight_info = document.getElementById("p1t" + _x);
-            this.fight_info.innerHTML = `${this.team1[_x].Name} <br><br>Strength: ${this.team1[_x].Fuerza}<br><br>
+            this.fight_info.innerHTML = `${this.team1[_x].Nombre} <br><br>Strength: ${this.team1[_x].Ataque}<br><br>
                 Defense: ${this.team1[_x].Defensa}<br><br> Luck: ${this.team1[_x].Suerte}<br><br> `;
         }
 
         //delay y pasamos a la funcion que detecta los personajes para el player 2.
         if(this.team1.length == 3){
             //inhabilitamos el click en todas las imagenes.
-            for(_r = 1; _r < 10; _r++){
+            for(let _r = 1; _r < 10; _r++){
                 document.getElementById(_r).onclick = "";
             }
 
@@ -102,23 +103,23 @@ let partida = {
                     </div>
                     <div class="facesin">
                         <div class="cara"></div>
-                        <div class="cara"><img src="../img/${this.team2posibles[0].Name}.png" alt="" id="11" onclick="partida.choose2(0,11)">
-                            <div class="nom">${this.team2posibles[0].Name}</div>
+                        <div class="cara"><img src="img/${this.team2posibles[0].Nombre}.png" alt="" id="11" onclick="partida.choose2(0,11)">
+                            <p>${this.team2posibles[0].Nombre}</p>
                         </div>
-                        <div class="cara"><img src="../img/${this.team2posibles[1].Name}.png" alt="" id="12" onclick="partida.choose2(1,12)">
-                            <div class="nom">${this.team2posibles[1].Name}</div>
+                        <div class="cara"><img src="img/${this.team2posibles[1].Nombre}.png" alt="" id="12" onclick="partida.choose2(1,12)">
+                            <div class="nom">${this.team2posibles[1].Nombre}</div>
                         </div>
-                        <div class="cara"><img src="../img/${this.team2posibles[2].Name}.png" alt="" id="13" onclick="partida.choose2(2,13)">
-                            <div class="nom">${this.team2posibles[2].Name}</div>
+                        <div class="cara"><img src="img/${this.team2posibles[2].Nombre}.png" alt="" id="13" onclick="partida.choose2(2,13)">
+                            <div class="nom">${this.team2posibles[2].Nombre}</div>
                         </div>
-                        <div class="cara"><img src="../img/${this.team2posibles[3].Name}.png" alt="" id="14" onclick="partida.choose2(3,14)">
-                            <div class="nom">${this.team2posibles[3].Name}</div>
+                        <div class="cara"><img src="img/${this.team2posibles[3].Nombre}.png" alt="" id="14" onclick="partida.choose2(3,14)">
+                            <div class="nom">${this.team2posibles[3].Nombre}</div>
                         </div>
-                        <div class="cara"><img src="../img/${this.team2posibles[4].Name}.png" alt="" id="15" onclick="partida.choose2(4,15)">
-                            <div class="nom">${this.team2posibles[4].Name}</div>
+                        <div class="cara"><img src="img/${this.team2posibles[4].Nombre}.png" alt="" id="15" onclick="partida.choose2(4,15)">
+                            <div class="nom">${this.team2posibles[4].Nombre}</div>
                         </div>
-                        <div class="cara"><img src="../img/${this.team2posibles[5].Name}.png" alt="" id="16" onclick="partida.choose2(5,16)">
-                            <div class="nom">${this.team2posibles[5].Name}</div>
+                        <div class="cara"><img src="img/${this.team2posibles[5].Nombre}.png" alt="" id="16" onclick="partida.choose2(5,16)">
+                            <div class="nom">${this.team2posibles[5].Nombre}</div>
                         </div>
                         
                         <div class="cara"></div>
@@ -141,7 +142,7 @@ let partida = {
 
         this.organizer(4);
 
-        let plena_pf = document.getElementById("fase4");
+        let plena_pf = document.getElementById("pantalla4");
         plena_pf.innerHTML = `<div class="centrar">
         <div class="prefightking">
             <div class="getready">
@@ -191,7 +192,7 @@ let partida = {
             arg1 = this.team1[this.cont_fight];
             arg2 = this.team2[this.cont_fight];
 
-            let plena_pf3 = document.getElementById("fase5");
+            let plena_pf3 = document.getElementById("pantalla5");
             plena_pf3.innerHTML = `<div class="cabecera">
         <div class="cab1"></div>
         <div class="cab2">FIGHT ${this.cont_fight + 1}</div>
@@ -199,13 +200,13 @@ let partida = {
     </div>
     <div class="bodyfight">
         <div class="bloca">
-            <div class="luch1name">${this.team1[this.cont_fight].Name}</div>
-            <div class="luch1sprite"><img src="./img/fi/${this.team1[this.cont_fight].Name}p1.png"></div>
+            <div class="luch1name">${this.team1[this.cont_fight].Nombre}</div>
+            <div class="luch1sprite"><img src="img/${this.team1[this.cont_fight].Nombre}.png"></div>
             <div id="glad1v" class="luch1life">PLAYER 1 LIFE : ${this.team1[this.cont_fight].Vida}</div>
         </div>
         <div class="blocb">
-            <div class="luch2name">${this.team2[this.cont_fight].Name}</div>
-            <div class="luch2sprite"><img src="./img/fi/${this.team2[this.cont_fight].Name}p2.png"></div>
+            <div class="luch2name">${this.team2[this.cont_fight].Nombre}</div>
+            <div class="luch2sprite"><img src="img/${this.team2[this.cont_fight].Nombre}.png"></div>
             <div id="glad2v" class="luch2life">PLAYER 2 LIFE : ${this.team2[this.cont_fight].Vida}</div>
         </div>
     </div>

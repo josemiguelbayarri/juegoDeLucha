@@ -137,6 +137,17 @@
     justify-content: center;
 }
 
+.p1message{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: klnifed;
+    background: -webkit-linear-gradient(left top,);
+    background: linear-gradient(to bottom right, red, #0a5b3a);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+
 
 
 /* CUARTA PANTALLA */
@@ -201,7 +212,7 @@
     
 }
 
-.fightlm {
+/* .fightlm {
 
     position: relative;
     margin-left: 275px;
@@ -250,4 +261,11 @@
     position: relative;
     margin-right: 250px;
     
+} */
+
+
+.carasel {
+    position: relative;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
 }
