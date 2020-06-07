@@ -1,3 +1,8 @@
+let _x;
+let _c;
+let _r2;
+
+
 let partida = {
     
     //propiedades 
@@ -97,22 +102,22 @@ let partida = {
                     </div>
                     <div class="facesin">
                         <div class="cara"></div>
-                        <div class="cara"><img src="img/fi/${this.team2posibles[0].Name}.png" alt="" id="11" onclick="partida.choose2(0,11)">
+                        <div class="cara"><img src="../img/${this.team2posibles[0].Name}.png" alt="" id="11" onclick="partida.choose2(0,11)">
                             <div class="nom">${this.team2posibles[0].Name}</div>
                         </div>
-                        <div class="cara"><img src="img/fi/${this.team2posibles[1].Name}.png" alt="" id="12" onclick="partida.choose2(1,12)">
+                        <div class="cara"><img src="../img/${this.team2posibles[1].Name}.png" alt="" id="12" onclick="partida.choose2(1,12)">
                             <div class="nom">${this.team2posibles[1].Name}</div>
                         </div>
-                        <div class="cara"><img src="img/fi/${this.team2posibles[2].Name}.png" alt="" id="13" onclick="partida.choose2(2,13)">
+                        <div class="cara"><img src="../img/${this.team2posibles[2].Name}.png" alt="" id="13" onclick="partida.choose2(2,13)">
                             <div class="nom">${this.team2posibles[2].Name}</div>
                         </div>
-                        <div class="cara"><img src="img/fi/${this.team2posibles[3].Name}.png" alt="" id="14" onclick="partida.choose2(3,14)">
+                        <div class="cara"><img src="../img/${this.team2posibles[3].Name}.png" alt="" id="14" onclick="partida.choose2(3,14)">
                             <div class="nom">${this.team2posibles[3].Name}</div>
                         </div>
-                        <div class="cara"><img src="img/fi/${this.team2posibles[4].Name}.png" alt="" id="15" onclick="partida.choose2(4,15)">
+                        <div class="cara"><img src="../img/${this.team2posibles[4].Name}.png" alt="" id="15" onclick="partida.choose2(4,15)">
                             <div class="nom">${this.team2posibles[4].Name}</div>
                         </div>
-                        <div class="cara"><img src="img/fi/${this.team2posibles[5].Name}.png" alt="" id="16" onclick="partida.choose2(5,16)">
+                        <div class="cara"><img src="../img/${this.team2posibles[5].Name}.png" alt="" id="16" onclick="partida.choose2(5,16)">
                             <div class="nom">${this.team2posibles[5].Name}</div>
                         </div>
                         

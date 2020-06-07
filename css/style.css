@@ -183,3 +183,71 @@
     background-color: green;
     height: 100vh;
 }
+
+
+
+
+
+
+
+
+
+.fighterscont{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fightlm {
+
+    position: relative;
+    margin-left: 275px;
+    
+}
+
+.p1f1 {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    
+}
+
+.p1f2 {
+    position: relative;
+    width: 220px;
+    height: 200px;
+}
+
+.p1f3 {
+    position: relative;
+    width: 220px;
+    height: 200px;
+}
+
+.p2f1 {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    
+}
+
+.p2f2 {
+    position: relative;
+    width: 220px;
+    height: 200px;
+}
+
+.p2f3 {
+    position: relative;
+    width: 220px;
+    height: 200px;
+}
+
+.fightrm {
+    position: relative;
+    margin-right: 250px;
+    
+}
