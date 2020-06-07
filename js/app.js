@@ -18,10 +18,10 @@ let partida = {
     arg2: "",
 
     choose1(idfighter){
-        console.log(idfighter);
-        this.team1.push(allplayers[idfighter]);
+        
 
-        if(this.team1.lenght < 4){
+        if(this.team1.length < 4){
+            this.team1.push(allplayers[idfighter]);
             document.getElementById(idfighter).className = "carasel";
             document.getElementById(idfighter).onclick = "";
             console.log("estoy aqui");
@@ -142,7 +142,7 @@ let partida = {
         <div class="prefightking">
             <div class="getready">
                 <div class="getready1"></div>
-                <div class="getready2">FIGHT STARTS IN A FEW SECONDS...GET READY!!!</div>
+                <div class="getready2">FIGHT STARTS IN A FEW SECONDS    GET READY</div>
             </div>
             <div class="prerest">
                 
@@ -197,12 +197,12 @@ let partida = {
             <div class="bloca">
                 <div class="luch1name">${this.team1[this.cont_fight].Nombre}</div>
                 <div class="luch1sprite"><img src="img/${this.team1[this.cont_fight].Nombre}.png"></div>
-                <div id="glad1v" class="luch1life">PLAYER 1 LIFE : ${this.team1[this.cont_fight].Vida}</div>
+                <div id="glad1v" class="luch1life">PLAYER 1 LIFE  ${this.team1[this.cont_fight].Vida}</div>
             </div>
             <div class="blocb">
                 <div class="luch2name">${this.team2[this.cont_fight].Nombre}</div>
                 <div class="luch2sprite"><img src="img/${this.team2[this.cont_fight].Nombre}.png"></div>
-                <div id="glad2v" class="luch2life">PLAYER 2 LIFE : ${this.team2[this.cont_fight].Vida}</div>
+                <div id="glad2v" class="luch2life">PLAYER 2 LIFE  ${this.team2[this.cont_fight].Vida}</div>
             </div>
         </div>
         <div class="announcement">
@@ -212,7 +212,7 @@ let partida = {
         </div>
         <div class="punch">
             <div class="pun1"></div>
-            <div class="pun2"><img id="fist" class ="hitter" src="img/punch.png" onclick="game.turnoFight(arg1,arg2)"></div>
+            <div class="pun2"><img id="fist" class ="hitter" src="img/puño.png" onclick="game.turnoFight(arg1,arg2)"></div>
             <div class="pun3"></div>
         </div>
     </div>`;
@@ -243,7 +243,7 @@ let partida = {
         };
 
         let plena_end = document.getElementById("pantalla6");
-        plena_end.innerHTML = `<div class="centrar">
+        plena_end.innerHTML = `<div class="centrar_6">
             <div class="winann">
                 <div class="winteam">TEAM ${pn}</div>
                 <div class="wininfo">
@@ -252,7 +252,6 @@ let partida = {
                         <div class="carasganan"><img src="img/${tw[0].Nombre}.png" alt="">
                         <img src="img/${tw[1].Nombre}.png" alt="">
                         <img src="img/${tw[2].Nombre}.png" alt=""></div>
-                        <div class="winlogo"><img src="./img/winner.png"></div>
                         <div class="textrest"><p class="totres" onclick="partida.init1()">CLICK HERE TO PLAY AGAIN</p></div>
                         <div class="espaciowin"></div>
                     </div>
